@@ -33,6 +33,15 @@ module.exports = {
   },
   solidity: {
     version: "0.8.17",
+    //eth network and url added
+    defaultNetwork:'goerli',
+    networks: {
+      hardhat:{},
+      goerli:{
+        url: 'https://rpc.ankr.com/eth_goerli',
+        accounts: [`0x${process.env.PRIVATE_KEY}`]
+      }
+    },
     settings: {
       optimizer: {
         enabled: true,

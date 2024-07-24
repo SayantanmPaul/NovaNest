@@ -34,11 +34,11 @@ module.exports = {
   solidity: {
     version: "0.8.17",
     //eth network and url added
-    defaultNetwork:'goerli',
+    defaultNetwork:'sepolia',
     networks: {
       hardhat:{},
-      goerli:{
-        url: 'https://rpc.ankr.com/eth_goerli',
+      sepolia:{
+        url: 'https://rpc.ankr.com/eth_sepolia',
         accounts: [`0x${process.env.PRIVATE_KEY}`]
       }
     },
